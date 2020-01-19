@@ -17,7 +17,7 @@ namespace UnitTestProject2
 
 
             string textfile = "";
-            using (StreamReader fs = new StreamReader(@"C:\Новая папка\1.txt"))
+            using (StreamReader fs = new StreamReader(@"C:\Новая папка\2.txt"))
             {
                 while (true)
                 {
