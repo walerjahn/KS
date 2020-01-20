@@ -11,36 +11,7 @@ namespace UnitTestProject2
     [TestClass]
     public class LABA2
     {
-        [TestMethod]
-        public void SingleString()
-        {
 
-
-            string textfile = "";
-            using (StreamReader fs = new StreamReader(@"C:\Новая папка\2.txt"))
-            {
-                while (true)
-                {
-                    string temp = fs.ReadLine();
-                    if (temp == null) break;
-                    textfile += temp;
-                }
-            }
-
-
-
-
-            AhoCorasick.Trie trie = new AhoCorasick.Trie();
-            trie.Add("STRING");
-
-            trie.Build();
-
-            string[] matches = trie.Find(textfile).ToArray();
-
-            Assert.AreEqual(1, matches.Length);
-            Assert.AreEqual("STRING", matches[0]);
-
-        }
         
         [TestMethod]
         public void MultiString()
